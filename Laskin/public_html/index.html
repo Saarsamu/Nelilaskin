@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form name="laskuri">
+            <table>
+		<label for="value_x"></label>
+		<input type="text" name="input"/>
+                <tr>
+                    <td><button type="button" name="seitsemän" value="7" OnClick="laskuri.input.value += '7'">7</button></td>
+                    <td><button type="button" name="kahdeksan" value="8" OnClick="laskuri.input.value += '8'">8</button></td>
+                    <td><button type="button" name="yhdeksän" value="9" OnClick="laskuri.input.value += '9'">9</button></td>
+                    <td><button type="button" name="jako" value="/" OnClick="laskuri.input.value += '/'">/</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" name="neljä" value="4" OnClick="laskuri.input.value += '4'">4</button></td>
+                    <td><button type="button" name="viisi" value="5" OnClick="laskuri.input.value += '5'">5</button></td>
+                    <td><button type="button" name="kuusi" value="6" OnClick="laskuri.input.value += '6'">6</button></td>
+                    <td><button type="button" name="kerto" value="*" OnClick="laskuri.input.value += '*'">*</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" name="yksi" value="1" OnClick="laskuri.input.value += '1'">1</button></td>
+                    <td><button type="button" name="kaksi" value="2" OnClick="laskuri.input.value += '2'">2</button></td>
+                    <td><button type="button" name="kolme" value="3" OnClick="laskuri.input.value += '3'">3</button></td>
+                    <td><button type="button" name="miinus" value="-" OnClick="laskuri.input.value += '-'">-</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" name="nolla" value="0" OnClick="laskuri.input.value += '0'">0</button></td>
+                    <td><button type="button" name="pilkku" value="." OnClick="laskuri.input.value += '.'">.</button></td>
+                    <td><button type="button" name="yhtäsuuri" value="=" OnClick="laskuri.input.value = eval(laskuri.input.value)">=</button></td>
+                    <td><button type="button" name="plus" value="+" OnClick="laskuri.input.value += '+'">+</button></td>
+                </tr>
+            </table>
+		<!-- this objektin käyttö eli viittaus objektiin itseensä -->
+		<span id="data"></span>
+	</form>
+    </body>
+</html>
